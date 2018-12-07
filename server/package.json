@@ -1,0 +1,20 @@
+{
+  "name": "anime_recommender",
+  "version": "0.0.0.1",
+  "description": "Question Answering in Anime world using Web Semantic",
+  "main": "index.js",
+  "author": "Yudamo",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "express": "^4.16.4",
+    "lodash": "^4.17.11",
+    "sparql-client-2": "^0.6.3"
+  },
+  "devDependencies": {
+    "@types/express": "^4.16.0",
+    "tslint": "^5.11.0",
+    "tslint-config-prettier": "^1.15.0",
+    "typescript": "^3.1.6"
+  }
+}
