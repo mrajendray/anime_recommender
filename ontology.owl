@@ -1,0 +1,385 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://aon.aon/ontology.owl#"
+     xml:base="https://aon.aon/ontology.owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="https://aon.aon/ontology.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://aon.aon/ontology.owl#bannerImg -->
+
+    <owl:ObjectProperty rdf:about="https://aon.aon/ontology.owl#bannerImg">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+                        <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+                        <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:comment>Images that linked to the item.</rdfs:comment>
+        <rdfs:label>bannerImg</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://aon.aon/ontology.owl#character -->
+
+    <owl:ObjectProperty rdf:about="https://aon.aon/ontology.owl#character">
+        <rdfs:domain rdf:resource="https://aon.aon/ontology.owl#CreativeWork"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://aon.aon/ontology.owl#Person"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+                        <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+                        <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:comment xml:lang="en">Fictional person connected with a creative work.</rdfs:comment>
+        <rdfs:label xml:lang="en">character</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://aon.aon/ontology.owl#description -->
+
+    <owl:ObjectProperty rdf:about="https://aon.aon/ontology.owl#description">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:comment>A description of the item</rdfs:comment>
+        <rdfs:label>description</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://aon.aon/ontology.owl#genre -->
+
+    <owl:ObjectProperty rdf:about="https://aon.aon/ontology.owl#genre">
+        <rdfs:domain rdf:resource="https://aon.aon/ontology.owl#CreativeWork"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+                        <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+                        <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:comment xml:lang="en">Genre of the creative work, broadcast channel or group.</rdfs:comment>
+        <rdfs:label xml:lang="en">genre</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://aon.aon/ontology.owl#name -->
+
+    <owl:ObjectProperty rdf:about="https://aon.aon/ontology.owl#name">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+                        <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+                        <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:comment>name of the item</rdfs:comment>
+        <rdfs:label>name</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://aon.aon/ontology.owl#numberOfEpisodes -->
+
+    <owl:ObjectProperty rdf:about="https://aon.aon/ontology.owl#numberOfEpisodes">
+        <rdfs:domain rdf:resource="https://aon.aon/ontology.owl#CreativeWork"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:comment xml:lang="en">The number of episodes in this season or series.</rdfs:comment>
+        <rdfs:label xml:lang="en">numberOfEpisodes</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://aon.aon/ontology.owl#popularity -->
+
+    <owl:ObjectProperty rdf:about="https://aon.aon/ontology.owl#popularity">
+        <rdfs:domain rdf:resource="https://aon.aon/ontology.owl#CreativeWork"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:comment xml:lang="en">A number of anime viewer that likes the anime.</rdfs:comment>
+        <rdfs:label xml:lang="en">popularity</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://aon.aon/ontology.owl#relatedTo -->
+
+    <owl:ObjectProperty rdf:about="https://aon.aon/ontology.owl#relatedTo">
+        <rdfs:domain rdf:resource="https://aon.aon/ontology.owl#CreativeWork"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+                        <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+                        <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:comment xml:lang="en">Relation between an anime to another anime. (eg. Anime Season 1 with Anime Season 2)</rdfs:comment>
+        <rdfs:label xml:lang="en">relatedTo</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://aon.aon/ontology.owl#relatedType -->
+
+    <owl:ObjectProperty rdf:about="https://aon.aon/ontology.owl#relatedType">
+        <rdfs:domain rdf:resource="https://aon.aon/ontology.owl#CreativeWork"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+                        <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+                        <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:comment xml:lang="en">Type of relation an anime has. (eg. Sequel, Prequel, etc)</rdfs:comment>
+        <rdfs:label xml:lang="en">relatedType</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://aon.aon/ontology.owl#season -->
+
+    <owl:ObjectProperty rdf:about="https://aon.aon/ontology.owl#season">
+        <rdfs:domain rdf:resource="https://aon.aon/ontology.owl#CreativeWork"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:comment>Season of released Anime (eg. Winter, Spring, Summer, Fall)</rdfs:comment>
+        <rdfs:label>season</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://aon.aon/ontology.owl#seasonYear -->
+
+    <owl:ObjectProperty rdf:about="https://aon.aon/ontology.owl#seasonYear">
+        <rdfs:domain rdf:resource="https://aon.aon/ontology.owl#CreativeWork"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:comment>Year of Released Anime</rdfs:comment>
+        <rdfs:label>seasonYear</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://aon.aon/ontology.owl#spokenBy -->
+
+    <owl:ObjectProperty rdf:about="https://aon.aon/ontology.owl#spokenBy">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://aon.aon/ontology.owl#Person"/>
+                    <rdf:Description rdf:about="https://aon.aon/ontology.owl#Quotation"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://aon.aon/ontology.owl#Person"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+                        <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+                        <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:comment xml:lang="en">The (e.g. fictional) character, Person to whom the quotation is attributed within the containing CreativeWork.</rdfs:comment>
+        <rdfs:comment xml:lang="en">spokenBy</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://aon.aon/ontology.owl#studios -->
+
+    <owl:ObjectProperty rdf:about="https://aon.aon/ontology.owl#studios">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://aon.aon/ontology.owl#Organization"/>
+                    <rdf:Description rdf:about="https://aon.aon/ontology.owl#Quotation"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:comment>A studios that in-charge on creating or composing the anime</rdfs:comment>
+        <rdfs:label>studios</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://aon.aon/ontology.owl#title -->
+
+    <owl:ObjectProperty rdf:about="https://aon.aon/ontology.owl#title">
+        <rdfs:domain rdf:resource="https://aon.aon/ontology.owl#CreativeWork"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+                        <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+                        <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:comment>A title of the Anime</rdfs:comment>
+        <rdfs:label>title</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://aon.aon/ontology.owl#Anime -->
+
+    <owl:Class rdf:about="https://aon.aon/ontology.owl#Anime">
+        <rdfs:subClassOf rdf:resource="https://aon.aon/ontology.owl#CreativeWork"/>
+        <rdfs:comment xml:lang="en">A style of animation originating in Japan.</rdfs:comment>
+        <rdfs:label xml:lang="en">Anime</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://aon.aon/ontology.owl#CreativeWork -->
+
+    <owl:Class rdf:about="https://aon.aon/ontology.owl#CreativeWork"/>
+    
+
+
+    <!-- https://aon.aon/ontology.owl#Organization -->
+
+    <owl:Class rdf:about="https://aon.aon/ontology.owl#Organization">
+        <rdfs:comment>Organization that in-charge on creating or composing an Anime</rdfs:comment>
+        <rdfs:label>Organization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://aon.aon/ontology.owl#Person -->
+
+    <owl:Class rdf:about="https://aon.aon/ontology.owl#Person">
+        <rdfs:comment xml:lang="en">A person (alive, dead, undead).</rdfs:comment>
+        <rdfs:label xml:lang="en">Person</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://aon.aon/ontology.owl#Quotation -->
+
+    <owl:Class rdf:about="https://aon.aon/ontology.owl#Quotation">
+        <rdfs:subClassOf rdf:resource="https://aon.aon/ontology.owl#CreativeWork"/>
+        <rdfs:comment xml:lang="en">A quotation. Often but not necessarily from some written work, attributable to a real world author and - if associated with a fictional character - to any fictional Person.</rdfs:comment>
+        <rdfs:label xml:lang="en">Quotation</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.6.2018-09-06T00:27:41Z) https://github.com/owlcs/owlapi -->
+

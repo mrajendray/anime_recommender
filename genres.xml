@@ -1,0 +1,80 @@
+<rdf:RDF
+	xml:base="http://www.w3.org/2002/07/owl"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:si="https://www.w3schools.com/rdf/"
+	xmlns:aon="https://aon.aon/ontology.owl#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+>
+
+<rdf:Description rdf:about="https://anilist.co/search/anime?includedGenres=Action">
+	<rdf:type rdf:resource="https://aon.aon/ontology.owl#genre"></rdf:type>
+    <aon:name>Action</aon:name>
+</rdf:Description>
+<rdf:Description rdf:about="https://anilist.co/search/anime?includedGenres=Adventure">
+	<rdf:type rdf:resource="https://aon.aon/ontology.owl#genre"></rdf:type>
+    <aon:name>Adventure</aon:name>
+</rdf:Description>
+<rdf:Description rdf:about="https://anilist.co/search/anime?includedGenres=Comedy">
+	<rdf:type rdf:resource="https://aon.aon/ontology.owl#genre"></rdf:type>
+    <aon:name>Comedy</aon:name>
+</rdf:Description>
+<rdf:Description rdf:about="https://anilist.co/search/anime?includedGenres=Drama">
+	<rdf:type rdf:resource="https://aon.aon/ontology.owl#genre"></rdf:type>
+    <aon:name>Drama</aon:name>
+</rdf:Description>
+<rdf:Description rdf:about="https://anilist.co/search/anime?includedGenres=Ecchi">
+	<rdf:type rdf:resource="https://aon.aon/ontology.owl#genre"></rdf:type>
+    <aon:name>Ecchi</aon:name>
+</rdf:Description>
+<rdf:Description rdf:about="https://anilist.co/search/anime?includedGenres=Fantasy">
+	<rdf:type rdf:resource="https://aon.aon/ontology.owl#genre"></rdf:type>
+    <aon:name>Fantasy</aon:name>
+</rdf:Description>
+<rdf:Description rdf:about="https://anilist.co/search/anime?includedGenres=Mahou%20Shoujo">
+	<rdf:type rdf:resource="https://aon.aon/ontology.owl#genre"></rdf:type>
+    <aon:name>Mahou Shoujo</aon:name>
+</rdf:Description>
+<rdf:Description rdf:about="https://anilist.co/search/anime?includedGenres=Mecha">
+	<rdf:type rdf:resource="https://aon.aon/ontology.owl#genre"></rdf:type>
+    <aon:name>Mecha</aon:name>
+</rdf:Description>
+<rdf:Description rdf:about="https://anilist.co/search/anime?includedGenres=Music">
+	<rdf:type rdf:resource="https://aon.aon/ontology.owl#genre"></rdf:type>
+    <aon:name>Music</aon:name>
+</rdf:Description>
+<rdf:Description rdf:about="https://anilist.co/search/anime?includedGenres=Mystery">
+	<rdf:type rdf:resource="https://aon.aon/ontology.owl#genre"></rdf:type>
+    <aon:name>Mystery</aon:name>
+</rdf:Description>
+<rdf:Description rdf:about="https://anilist.co/search/anime?includedGenres=Psychological">
+	<rdf:type rdf:resource="https://aon.aon/ontology.owl#genre"></rdf:type>
+    <aon:name>Psychological</aon:name>
+</rdf:Description>
+<rdf:Description rdf:about="https://anilist.co/search/anime?includedGenres=Romance">
+	<rdf:type rdf:resource="https://aon.aon/ontology.owl#genre"></rdf:type>
+    <aon:name>Romance</aon:name>
+</rdf:Description>
+<rdf:Description rdf:about="https://anilist.co/search/anime?includedGenres=Sci-Fi">
+	<rdf:type rdf:resource="https://aon.aon/ontology.owl#genre"></rdf:type>
+    <aon:name>Sci-Fi</aon:name>
+</rdf:Description>
+<rdf:Description rdf:about="https://anilist.co/search/anime?includedGenres=Slice%20of%20Life">
+	<rdf:type rdf:resource="https://aon.aon/ontology.owl#genre"></rdf:type>
+    <aon:name>Slice of Life</aon:name>
+</rdf:Description>
+<rdf:Description rdf:about="https://anilist.co/search/anime?includedGenres=Sports">
+	<rdf:type rdf:resource="https://aon.aon/ontology.owl#genre"></rdf:type>
+    <aon:name>Sports</aon:name>
+</rdf:Description>
+<rdf:Description rdf:about="https://anilist.co/search/anime?includedGenres=Supernatural">
+	<rdf:type rdf:resource="https://aon.aon/ontology.owl#genre"></rdf:type>
+    <aon:name>Supernatural</aon:name>
+</rdf:Description>
+<rdf:Description rdf:about="https://anilist.co/search/anime?includedGenres=Thriller">
+	<rdf:type rdf:resource="https://aon.aon/ontology.owl#genre"></rdf:type>
+    <aon:name>Thriller</aon:name>
+</rdf:Description>
+
+</rdf:RDF>
