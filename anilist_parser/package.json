@@ -1,0 +1,19 @@
+{
+  "name": "anilist-xml-parser",
+  "version": "0.0.1",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "@types/graphql": "^14.0.3",
+    "@types/node": "^10.12.0",
+    "@types/xmlbuilder": "^0.0.34"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "form-data": "^2.3.3",
+    "graphql": "^14.0.2",
+    "single-line-log": "^1.1.2",
+    "xmlbuilder": "^10.1.0"
+  }
+}
